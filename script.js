@@ -10,15 +10,15 @@ function compute() {
     document.getElementById("principal").focus();
   } else {
     document.getElementById("result").innerHTML =
-      "If you deposit " +
+      "If you deposit <mark>" +
       principal +
-      ",<br>at an interest rate of " +
+      ",</mark><br>at an interest rate of <mark>" +
       rate +
-      "%<br>You will receive an amount of " +
+      "%</mark><br>You will receive an amount of <mark>" +
       interest +
-      ",<br>in the year " +
+      ",</mark><br>in the year <mark>" +
       year +
-      "<br>";
+      "</mark><br>";
   }
 }
 
