@@ -7,6 +7,7 @@ function compute() {
 
   if (isNaN(principal) || principal <= 0) {
     alert("Enter a positive number");
+    document.getElementById("principal").focus();
   } else {
     document.getElementById("result").innerHTML =
       "If you deposit " +
@@ -20,6 +21,7 @@ function compute() {
       "<br>";
   }
 }
+
 function updateRate() {
   var rateval = document.getElementById("rate").value;
   document.getElementById("rate_val").innerText = rateval;
